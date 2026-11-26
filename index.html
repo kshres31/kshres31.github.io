@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karun Shrestha · Backend and systems engineer</title>
+  <meta name="description" content="Karun Shrestha is a computer science student at Jacksonville State University who builds fast backend, geospatial and distributed systems in Go, Python and PostgreSQL.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Karun Shrestha · Backend and systems engineer">
+  <meta property="og:description" content="Backend systems that stay fast under load. Projects, benchmarks and contact.">
+  <link rel="canonical" href="https://kshres31.github.io/">
+  <meta property="og:url" content="https://kshres31.github.io/">
+  <!-- shortcut: no og:image yet, so link previews show text only; add a 1200x630 PNG when you have one -->
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23000'/%3E%3Ctext x='16' y='22' font-family='system-ui' font-size='18' font-weight='600' fill='%23fff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"What kind of role are you looking for?","acceptedAnswer":{"@type":"Answer","text":"Software engineering internships focused on backend, infrastructure or data systems."}},
+    {"@type":"Question","name":"When do you graduate?","acceptedAnswer":{"@type":"Answer","text":"I expect to finish my B.S. in Computer Science at Jacksonville State University in May 2028."}},
+    {"@type":"Question","name":"Can I see the code?","acceptedAnswer":{"@type":"Answer","text":"Yes. My projects are on GitHub at github.com/kshres31."}}
+  ]}
+  </script>
+</head>
+<body>
+  <a class="skip button-sm" href="#main">Skip to content</a>
+
+  <nav class="nav" aria-label="Main">
+    <a class="nav-brand title-3" href="#top">Karun Shrestha</a>
+    <ul class="nav-links title-4">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-primary button-sm" href="mailto:kshres31@gmail.com">Email me</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="heading-5">
+      <li style="--i:0"><a href="#work">Work</a></li>
+      <li style="--i:1"><a href="#process">Process</a></li>
+      <li style="--i:2"><a href="#experience">Experience</a></li>
+      <li style="--i:3"><a href="#skills">Skills</a></li>
+      <li style="--i:4"><a href="#faq">FAQ</a></li>
+      <li style="--i:5"><a class="btn btn-primary button-md" href="mailto:kshres31@gmail.com"><i class="ph ph-envelope-simple" aria-hidden="true"></i>Email me</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <header class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow caption-4 muted"><span class="dot" aria-hidden="true"></span>Open to software engineering internships</span>
+          <h1 class="heading-1">I build backend systems<br> that stay fast under load</h1>
+          <p class="sub title-2 muted">I'm Karun, a computer science student at Jacksonville State University. I design geospatial and distributed services in Go, Python and PostgreSQL, then benchmark them until the p95 numbers hold up.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary button-md" href="mailto:kshres31@gmail.com"><i class="ph ph-envelope-simple" aria-hidden="true"></i>Email me about a role</a>
+            <a class="btn btn-ghost button-md" href="#work">See the projects</a>
+          </div>
+          <div class="proof">
+            <div><span class="heading-6 mono">18K/s</span><span class="caption-5 muted">redirects at 22 ms p95</span></div>
+            <div><span class="heading-6 mono">120K+/s</span><span class="caption-5 muted">key value operations</span></div>
+            <div><span class="heading-6 mono">3.8</span><span class="caption-5 muted">GPA, Dean's List</span></div>
+          </div>
+        </div>
+        <div class="bench" aria-label="Benchmark highlights from my projects">
+          <div class="bench-head" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="bench-body mono body-6">
+            <div class="bench-row"><span class="muted">radius search p95</span><b>430 → 71 ms</b></div>
+            <div class="bench-row"><span class="muted">watershed query p95</span><b>790 → 96 ms</b></div>
+            <div class="bench-row"><span class="muted">database reads</span><b>87% fewer</b></div>
+            <div class="bench-row"><span class="muted">cache hit rate</span><b>94%</b></div>
+            <div class="bench-row"><span class="muted">double bookings</span><b>0 of 1,000+</b></div>
+            <div class="bench-row"><span class="muted">observations ingested</span><b>2.4M+</b></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tagline reveal (B11) -->
+    <section class="tagline" aria-label="How I think about performance">
+      <div class="wrap">
+        <p class="heading-2" data-words>Fast is a number, not a feeling.<br> I measure first, fix the slow path,<br> then prove it under real load.</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 class="heading-3">Selected projects</h2>
+          <p class="body-3 muted">Four systems, each built to answer one question: how far can this go before it slows down?</p>
+        </div>
+        <div class="projects">
+          <article class="card reveal">
+            <h3 class="heading-6">Parking Marketplace</h3>
+            <p class="body-6 muted">A geospatial marketplace for finding and reserving parking nearby.</p>
+            <div class="metrics caption-4 mono"><span class="chip">50K+ listings</span><span class="chip">71 ms p95</span><span class="chip">1.8K req/s</span></div>
+            <ul class="body-6">
+              <li><i class="ph ph-check" aria-hidden="true"></i>Cut radius search p95 from 430 ms to 71 ms with PostGIS GiST indexes and Redis caching.</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Prevented double bookings across 1,000+ concurrent tests using exclusion constraints and row level locking.</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Processed Stripe webhooks idempotently with role based access, hitting a 92% cache hit rate.</li>
+            </ul>
+            <p class="stack caption-5 muted mono">Next.js · TypeScript · FastAPI · PostgreSQL/PostGIS · Redis</p>
+          </article>
+          <article class="card reveal">
+            <h3 class="heading-6">Distributed Link Analytics</h3>
+            <p class="body-6 muted">A high throughput URL shortener with click analytics kept off the hot path.</p>
+            <div class="metrics caption-4 mono"><span class="chip">18K redirects/s</span><span class="chip">22 ms p95</span><span class="chip">1M+ events</span></div>
+            <ul class="body-6">
+              <li><i class="ph ph-check" aria-hidden="true"></i>Served redirects through Base62 IDs, Redis caching and indexed PostgreSQL lookups.</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Moved analytics to async workers with idempotent consumers, exponential backoff and backpressure.</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Added token bucket rate limiting; warm cache runs cut database reads by 87%.</li>
+            </ul>
+            <p class="stack caption-5 muted mono">Go · PostgreSQL · Redis · Docker</p>
+          </article>
+          <article class="card reveal">
+            <h3 class="heading-6">Flood Intelligence Platform</h3>
+            <p class="body-6 muted">A pipeline that turns public rainfall, river and terrain data into watershed insight.</p>
+            <div class="metrics caption-4 mono"><span class="chip">2.4M+ observations</span><span class="chip">40K+ segments</span><span class="chip">96 ms p95</span></div>
+            <ul class="body-6">
+              <li><i class="ph ph-check" aria-hidden="true"></i>Ingested and normalized observations from multiple public sources with stale data detection.</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Modeled river networks as graphs for upstream and downstream traversal under 150 ms p95.</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Brought watershed and intersection queries from 790 ms to 96 ms p95.</li>
+            </ul>
+            <p class="stack caption-5 muted mono">Python · FastAPI · PostgreSQL/PostGIS · GeoPandas · Docker</p>
+          </article>
+          <article class="card reveal">
+            <h3 class="heading-6">CacheCraft</h3>
+            <p class="body-6 muted">A concurrent TCP key value server written from scratch with its own protocol.</p>
+            <div class="metrics caption-4 mono"><span class="chip">120K+ ops/s</span><span class="chip">100 clients</span><span class="chip">&lt;5 ms p95</span></div>
+            <ul class="body-6">
+              <li><i class="ph ph-check" aria-hidden="true"></i>Implemented O(1) LRU eviction with a hash map and doubly linked list.</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Scheduled TTL expiration on a heap and kept GET and SET thread safe.</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Recovered cleanly from malformed clients without dropping other connections.</li>
+            </ul>
+            <p class="stack caption-5 muted mono">Go · TCP/IP · Concurrency · Data structures</p>
+          </article>
+        </div>
+        <p class="reveal" style="margin-top: var(--s-400)"><a class="btn btn-ghost button-md" href="https://github.com/kshres31" target="_blank" rel="noopener"><i class="ph ph-github-logo" aria-hidden="true"></i>Browse the code on GitHub</a></p>
+      </div>
+    </section>
+
+    <!-- How I work -->
+    <section id="process">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 class="heading-3">How I work</h2>
+          <p class="body-3 muted">The same three steps show up in every project above.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><span class="step-n caption-3 mono">1</span><h3 class="title-2">Measure the baseline</h3><p class="body-6 muted">Load test first and record p95 latency, throughput and error rates so every change has something to beat.</p></li>
+          <li class="reveal"><span class="step-n caption-3 mono">2</span><h3 class="title-2">Fix the slow path</h3><p class="body-6 muted">Add the right index, cache or queue where the profile points, and keep writes safe with constraints and idempotency.</p></li>
+          <li class="reveal"><span class="step-n caption-3 mono">3</span><h3 class="title-2">Prove it under load</h3><p class="body-6 muted">Rerun the same benchmark with concurrent clients and keep the change only if the numbers and consistency hold.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Experience + education -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head reveal"><h2 class="heading-3">Experience and education</h2></div>
+        <div class="two">
+          <article class="card reveal">
+            <div class="row-top"><h3 class="title-2">Shift Lead · Virtual Dining Concept</h3><span class="caption-5 muted">Jan 2024 to present</span></div>
+            <p class="caption-5 muted">Jacksonville, AL</p>
+            <ul class="body-6">
+              <li><i class="ph ph-check" aria-hidden="true"></i>Troubleshoot digital ordering, Kiwibot autonomous delivery and POS systems during high volume service.</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Manage digital inventory and fulfillment workflows and resolve order discrepancies.</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Train and lead team members on ordering, POS, inventory and fulfillment platforms.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="row-top"><h3 class="title-2">B.S. Computer Science</h3><span class="caption-5 muted">Expected May 2028</span></div>
+            <p class="caption-5 muted">Jacksonville State University · GPA 3.8</p>
+            <p class="body-6 muted">Data Structures and Algorithms, Software Engineering, Database Systems, Human Computer Interaction, Applied Probability and Statistics, Object Oriented Design.</p>
+            <div class="metrics caption-4"><span class="chip">Secretary, Campus Chess Alliance</span><span class="chip">ACM member</span><span class="chip">Google Cloud Hackathon</span><span class="chip">150+ LeetCode problems</span><span class="chip">Dean's List</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head reveal"><h2 class="heading-3">Tools I use</h2></div>
+        <div class="skills">
+          <div class="reveal"><h3 class="title-3">Languages</h3><div class="metrics caption-4 mono"><span class="chip">Python</span><span class="chip">Go</span><span class="chip">Java</span><span class="chip">C++</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">SQL</span></div></div>
+          <div class="reveal"><h3 class="title-3">Frameworks and APIs</h3><div class="metrics caption-4 mono"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">FastAPI</span><span class="chip">REST</span><span class="chip">WebSockets</span></div></div>
+          <div class="reveal"><h3 class="title-3">Databases</h3><div class="metrics caption-4 mono"><span class="chip">PostgreSQL</span><span class="chip">PostGIS</span><span class="chip">MySQL</span><span class="chip">Redis</span></div></div>
+          <div class="reveal"><h3 class="title-3">Tools</h3><div class="metrics caption-4 mono"><span class="chip">Git</span><span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">Linux</span><span class="chip">pytest</span><span class="chip">JUnit</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head reveal"><h2 class="heading-3">Questions recruiters ask</h2></div>
+        <div class="faq reveal">
+          <details><summary class="title-3">What kind of role are you looking for?<i class="ph ph-plus" aria-hidden="true"></i></summary><p class="body-6 muted">Software engineering internships focused on backend, infrastructure or data systems.</p></details>
+          <details><summary class="title-3">When do you graduate?<i class="ph ph-plus" aria-hidden="true"></i></summary><p class="body-6 muted">I expect to finish my B.S. in Computer Science at Jacksonville State University in May 2028.</p></details>
+          <details><summary class="title-3">Can I see the code?<i class="ph ph-plus" aria-hidden="true"></i></summary><p class="body-6 muted">Yes. My projects are on <a href="https://github.com/kshres31" target="_blank" rel="noopener">GitHub</a>.</p></details>
+          <details><summary class="title-3">How did you measure those numbers?<i class="ph ph-plus" aria-hidden="true"></i></summary><p class="body-6 muted">With load tests and benchmarks I ran against each project, using concurrent clients and reporting p95 latency rather than averages.</p></details>
+          <details><summary class="title-3">Which languages are you strongest in?<i class="ph ph-plus" aria-hidden="true"></i></summary><p class="body-6 muted">Go and Python for services, SQL for data work, and TypeScript with Next.js when a project needs a frontend.</p></details>
+          <details><summary class="title-3">Have you worked on a team?<i class="ph ph-plus" aria-hidden="true"></i></summary><p class="body-6 muted">Yes. As a shift lead at Virtual Dining Concept I train teammates and coordinate fixes across teams when ordering or delivery systems break.</p></details>
+          <details><summary class="title-3">Where are you based?<i class="ph ph-plus" aria-hidden="true"></i></summary><p class="body-6 muted">Jacksonville, Alabama.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA, identical to the hero -->
+    <section aria-label="Contact">
+      <div class="wrap">
+        <div class="cta reveal">
+          <h2 class="heading-3">Hiring for a backend internship?</h2>
+          <p class="body-3 muted">Send me a note with the role and I'll reply with the project that fits it best.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary button-md" href="mailto:kshres31@gmail.com"><i class="ph ph-envelope-simple" aria-hidden="true"></i>Email me about a role</a>
+            <a class="btn btn-ghost button-md" href="https://www.linkedin.com/in/kshres31/" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo" aria-hidden="true"></i>LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap caption-5">
+      <span class="muted">© 2026 Karun Shrestha</span>
+      <nav aria-label="Footer">
+        <a href="https://github.com/kshres31" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/kshres31/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:kshres31@gmail.com">Email</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
